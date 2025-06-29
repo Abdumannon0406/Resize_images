@@ -26,7 +26,7 @@ for filename in os.listdir(input_folder):
         h, w = image.shape[:2]
         new_image = cv2.resize(image, (int(w / 2), int(h / 2)))
 
-        # ✅ Keep extension and save correctly
+        # Keep extension and save correctly
         output_path = os.path.join(output_folder, filename)
         cv2.imwrite(output_path, new_image)
 
